@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>FUCKUP</title>
+
+		<script
+			id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+		    data-sap-ui-xx-bindingSyntax="complex"
+		    data-sap-ui-compatVersion="edge" 
+			data-sap-ui-libs="sap.ui.commons,sap.ui.ux3,sap.ui.table,sap.m"
+			data-sap-ui-resourceroots='{
+				"sap.ui.demo.myFiori": "./","sap.ui.demo.mock": "mockdata"
+			}' >
+		</script>
+
+		<script>
+
+		
+			new sap.ui.core.ComponentContainer({
+				name : "sap.ui.demo.myFiori"
+			}).placeAt("content");
+			
+			
+//add stream video flow from youtube-------------------------------------------------------------------------------------			
+			var html1 = new sap.ui.core.HTML("html1", {
+                content:
+                	"<center><iframe width='200' height='100' src='https://www.youtube.com/embed/HF-aH7OFucg' frameborder='0' allowfullscreen></iframe></center>"
+        });
+    //Create a panel instance
+var oPanel = new sap.ui.commons.Panel();
+//Add something to the panel's content area
+oPanel.addContent(html1);
+//Attach the panel to the page
+oPanel.placeAt("content");
+//-----------------------------------------------------------------------------------------------------------------------
+
+
+		</script>
+
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>
