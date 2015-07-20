@@ -1,0 +1,13 @@
+<mvc:View 
+	height="100%"
+	controllerName="sap.m.sample.TileContainer.Robot"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page title="Robot state"
+		showNavButton="true"
+		navButtonPress="handleNavButtonPress" >
+		<content>
+	
+		</content>
+	</Page>
+</mvc:View>
