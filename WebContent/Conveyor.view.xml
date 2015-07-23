@@ -1,0 +1,54 @@
+<mvc:View 
+	height="100%"
+	controllerName="sap.m.sample.TileContainer.Conveyor"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout">
+	<Page title="Conveyor state"
+		showNavButton="true"
+		navButtonPress="handleNavButtonPress" >
+		<content>
+			<l:Grid class="sapUiSmallMarginTop" hSpacing="2" defaultSpan="L6 M6 S10">
+			<l:content>
+				<Image width="100%" src="./res/conveyor.jpg">
+				</Image>
+				<Panel>
+				<l:Grid class="sapUiSmallMarginTop" hSpacing="3">
+					<Label text="Control 1" design="Bold"/>
+					<VBox>
+						<html:img id="red1" src="res/red.png" style="display:none" width="30" height="30" />
+						<html:img id="green1" src="res/green.png" width="30" height="30" />
+						<Button text="Release" press="onPress"></Button>
+					</VBox>
+					<Label text="Control 2" design="Bold"/>
+					<VBox>
+						<html:img id="red2" src="res/red.png" style="display:none" width="30" height="30" />
+						<html:img id="green2" src="res/green.png" width="30" height="30" />						
+						<Button text="Release" press="onPress"></Button>
+					</VBox>
+					<Label text="Control 3" design="Bold"/>
+					<VBox>
+						<html:img id="red3" src="res/red.png" style="display:none" width="30" height="30" />
+						<html:img id="green3" src="res/green.png" width="30" height="30" />
+						<Button text="Release" press="onPress"></Button>
+					</VBox>
+					<Label text="Control 4" design="Bold"/>
+					<VBox>
+						<html:img id="red4" src="res/red.png" style="display:none" width="30" height="30" />
+						<html:img id="green4" src="res/green.png" width="30" height="30" />
+						<Button text="Release" press="onPress"></Button>
+					</VBox>
+				</l:Grid>
+   				</Panel>		
+
+			</l:content>
+			
+			</l:Grid>	
+			<Panel>
+				<html:iframe src="https://s9hanaxs.hanatrial.ondemand.com/i321397trial/iotmmsxs/"></html:iframe>	
+			
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>
