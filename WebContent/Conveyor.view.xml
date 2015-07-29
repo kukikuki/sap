@@ -19,7 +19,7 @@
 					<VBox>
 						<html:img id="red1" src="res/red.png" style="display:none" width="30" height="30" />
 						<html:img id="green1" src="res/green.png" width="30" height="30" />
-						<Button text="Release" press="onPress"></Button>
+						<Button id="ctrl1" text="Release" press="buttonPushCtr1"></Button>
 					</VBox>
 					<Label text="Control 2" design="Bold"/>
 					<VBox>
@@ -40,13 +40,18 @@
 						<Button text="Release" press="onPress"></Button>
 					</VBox>
 				</l:Grid>
+				<Panel>
+				<html:div id="stat" width="100%" height="100%">
+						<Button text="Show Statistics" press="handleChartPress"></Button>
+				</html:div>
+				</Panel>
    				</Panel>		
 
 			</l:content>
 			
 			</l:Grid>	
 			<Panel>
-				<html:iframe src="https://s9hanaxs.hanatrial.ondemand.com/i321397trial/iotmmsxs/"></html:iframe>	
+				<html:iframe id="msgs" width="100%" src="https://s9hanaxs.hanatrial.ondemand.com/i321397trial/iotmmsxs/"></html:iframe>	
 			
 			</Panel>
 		</content>

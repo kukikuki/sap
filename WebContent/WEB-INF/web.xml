@@ -101,6 +101,15 @@
     <url-pattern>/proxy/*</url-pattern>
 </servlet-mapping>
 
+<servlet>
+		<servlet-name>DataServlet</servlet-name>
+		<servlet-class>com.sap.iot.starterkit.ui.DataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DataServlet</servlet-name>
+		<url-pattern>/data/*</url-pattern>
+	</servlet-mapping>
+
 <!-- ============================================================== -->
 <!-- Destination name for service -->
 <!-- ============================================================== -->
@@ -119,6 +128,12 @@
     <res-ref-name>connectivity/DestinationFactory</res-ref-name>
     <res-type>com.sap.core.connectivity.api.DestinationFactory</res-type>
 </resource-ref>
+
+	<resource-ref>
+		<res-ref-name>connectivityConfiguration</res-ref-name>
+		<res-type>com.sap.core.connectivity.api.configuration.ConnectivityConfiguration</res-type>
+	</resource-ref>
+
 	
 	   <resource-ref>
     <res-ref-name>jdbc/dataSource</res-ref-name>

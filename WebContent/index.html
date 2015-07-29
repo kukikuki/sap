@@ -5,36 +5,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
 		
-		<title>ile Container</title>
+		<title>IoT App</title>
 		
 		<script id="sap-ui-bootstrap"
 			id="sap-ui-bootstrap"
 			src="resources/sap-ui-core.js"
 			data-sap-ui-theme="sap_bluecrystal"
-			data-sap-ui-libs="sap.m"
+			data-sap-ui-libs="sap.m, sap.viz"
 			data-sap-ui-xx-bindingSyntax="complex" 
-			data-sap-ui-resourceroots='{"sap.m.sample.TileContainer": "./", "sap.ui.demo.mock": "./mockdata"}'>
+			data-sap-ui-resourceroots='{"res":"./video/res", "sap.m.sample.TileContainer": "./", "sap.video.VideoContainer": "./video"}'>
 		</script>
 		
 		<!-- Application launch configuration -->
 		<script>
 			new sap.ui.core.ComponentContainer({
+				name : "sap.video.VideoContainer"
+			}).placeAt("video");
+		</script>
+		
+		<script>
+			new sap.ui.core.ComponentContainer({
 				name : "sap.m.sample.TileContainer"
 			}).placeAt("content");
-
 		</script>
 	</head>
 	
 	<!-- UI Content -->
 	<body class="sapUiBody" role="application">
 	<P align="center">Test App</P>
-	<div id="video" align="center">
-		<video controls
-  			src="http://media.w3.org/2010/05/bunny/movie.ogv">
-			Your user agent does not support the HTML5 Video element.
-		</video>
-	</div>
-	<div id="content"/>
+	<div id="video"></div>
+		
+	<div id="content"></div>
 	</body>
 	
 </html>

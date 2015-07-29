@@ -1,0 +1,26 @@
+<mvc:View
+	width="100%"
+	controllerName="sap.video.VideoContainer.Video"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<Panel width="100%">
+	<content>
+				<Image src="./res/sap.png" 
+					width="30%"
+					densityAware="true">		
+				</Image>
+				
+		</content>
+				<content>
+					<core:HTML content=
+						'&lt;video controls
+		  					src=&quot;http://media.w3.org/2010/05/bunny/movie.ogv&quot;&gt;
+							Your user agent does not support the HTML5 Video element.
+						&lt;/video&gt;'>
+					</core:HTML>
+
+		</content>
+		</Panel>
+</mvc:View>
